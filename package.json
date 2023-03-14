@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build2": "ng build --project=@tots/ng-whiteboard --configuration production && cd dist/tots/ng-whiteboard/ && npm publish --access public",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },

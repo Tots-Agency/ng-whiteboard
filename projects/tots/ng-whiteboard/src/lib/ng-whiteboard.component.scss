@@ -1,0 +1,104 @@
+:host {
+  width: inherit;
+  height: inherit;
+  min-width: inherit;
+  min-height: inherit;
+  max-width: inherit;
+  max-height: inherit;
+  .svgroot {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: inherit;
+    height: inherit;
+    min-width: inherit;
+    min-height: inherit;
+    max-width: inherit;
+    max-height: inherit;
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+
+    .wb_element,
+    .selectorGroup {
+      transform-box: fill-box;
+      transform-origin: center;
+    }
+    .text {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    &.drawing {
+      cursor: url('./cursor.svg') 5 5, crosshair;
+    }
+    .handlers {
+      display: none;
+    }
+    .onMove {
+      cursor: move;
+      .handlers {
+        display: block;
+      }
+    }
+  }
+
+  // cursors
+  .HAND {
+    cursor: grabbing;
+  }
+  .SELECT {
+    cursor: default;
+  }
+  .BRUSH {
+    cursor: url('./cursors/pencil.svg') 1 18, crosshair;
+  }
+  .IMAGE {
+    cursor: copy;
+  }
+  .LINE {
+    cursor: crosshair;
+  }
+  .RECT {
+    cursor: crosshair;
+  }
+  .ELLIPSE {
+    cursor: crosshair;
+  }
+  .TEXT {
+    cursor: text;
+  }
+  .ERASER {
+    cursor: url('./cursors/eraser.svg') 0 12, crosshair;
+  }
+}
+
+.foreign {
+  text-align: left;
+}
+
+.insideforeign {
+  display: inline-block;
+}
+
+.foreign {
+  text-align: left;
+}
+
+.insideforeign {
+  display: inline-block;
+}
+.text-input {
+  position: absolute;
+  background: transparent;
+  border: 1px dashed #0b89f0;
+  outline: none;
+  height: 25px;
+  font-size: inherit;
+  font-family: inherit;
+  min-width: 5ch;
+  height: 2ch;
+  padding: 5px 0;
+  pointer-events: auto;
+  z-index: 5;
+}

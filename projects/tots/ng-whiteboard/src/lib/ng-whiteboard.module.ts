@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { NgWhiteboardComponent } from './ng-whiteboard.component';
 
@@ -8,6 +9,7 @@ import { NgWhiteboardComponent } from './ng-whiteboard.component';
     NgWhiteboardComponent
   ],
   imports: [
+    CommonModule
   ],
   exports: [
     NgWhiteboardComponent
